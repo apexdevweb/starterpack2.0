@@ -1,5 +1,5 @@
 from flask import Flask
-from routes.recettes import recettes_bp  # Correct
+from routes.recettes import recettes_bp
 
 app = Flask(__name__)
 app.register_blueprint(recettes_bp)

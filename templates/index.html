@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
     <title>Document</title>
-</head>
-<body>
-    <h1>Bienvenue dans votre IA Culinaire !</h1>
-    <input type="text" id="user_question" placeholder="Votre question">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 id="intro_texte" class="intro">Bienvenue dans votre IA Culinaire !</h1>
+    </div>
+    <input type="text" id="user_question" placeholder="Votre question" />
     <button onclick="envoyerQuestion()">Envoyer</button>
-    
+
     <ul id="Ai_response"></ul>
     <script src="{{ url_for('static', filename='logic.js') }}" defer></script>
-</body>
+  </body>
 </html>
